@@ -11410,6 +11410,12 @@ pre {
   }
 }
 
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
 .progress {
   background: #eaf0fc;
   border-radius: 0.2rem;
@@ -11478,16 +11484,15 @@ pre {
   }
 }
 
+
+
 .header {
-  background: url(../imgs/wall4.jpg) no-repeat center center fixed;
-  background-size: cover;
+  position: relative; /* Required for absolute positioning of the canvas */
   height: 94vh;
   min-height: 650px;
   border-bottom: 1px solid #dee2e6;
-  /* width: fit-content; */
-  padding-left: 0px;
-  padding-right: 0px;
-  color:#ffffff;
+  color: #ffffff;
+  overflow: hidden; /* Ensure the canvas doesn't overflow */
 }
 
 .header .container {
@@ -11676,3 +11681,22 @@ pre {
 .section.bg-gray {
   background: white;
 }
+
+
+
+html, body { height: 100%; }
+body { margin: 0; background: #000; }
+canvas { display: block; } */
+.waves { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+
+#snow
+  {display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #000000, #050505);
+  }
+
